@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 
-const uri = "mongodb://localhost:27017//MERN";
-function connectDb() {
+const uri = "mongodb+srv://tanyapanchal65:adil123@mern.ee7fk.mongodb.net/MERN?retryWrites=true&w=majority&appName=mern";
+function connectDb () {
     mongoose
         .connect(uri)
         .then(() => console.log('MongoDB connected successfully'))
         .catch(err => console.error('MongoDB connection error:', err));
 }
-module.exports = connectDb
+module.exports  = connectDb
